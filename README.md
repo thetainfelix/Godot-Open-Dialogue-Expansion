@@ -20,22 +20,22 @@ First off, its worth noting that in a JSON, an object is a collection of key-val
 
 A JSON for this tool should be an object containing a key for each language. The member variable in dialogue_system.gd called 'language' determines which of these keys is accessed, e.g., the default language is 'ENG'. So, each language should then contain an array of dialogue blocks. (I changed the basic structure to arrays of blocks rather than a dictionary containing blocks, in order to allow the blocks to advance automatically in order.) Each dialogue block is a dictionary containing all the parameters for that block, OR a String containing just dialogue. So:
 
-{
-	"ENG" : [
-		{
-			"id": "start",
-			"name" : "Jimmy",
-			"portrait" : "jimmy/01.png",
-			"position" : "left",
-			"content" : "Hi! I'm Johnny!"
-		},
-		"Wow, it's cold in here, huh?",
-		{ 
-			"content" : "Don't you agree, friend?",
-			"options" : ["Yes", "Nope"],
-			"next" : ["jimmy_agree", "jimmy_disagree"]
-		},
-			....
+	{
+		"ENG" : [
+			{
+				"id": "start",
+				"name" : "Jimmy",
+				"portrait" : "jimmy/01.png",
+				"position" : "left",
+				"content" : "Hi! I'm Johnny!"
+			},
+			"Wow, it's cold in here, huh?",
+			{ 
+				"content" : "Don't you agree, friend?",
+				"options" : ["Yes", "Nope"],
+				"next" : ["jimmy_agree", "jimmy_disagree"]
+			},
+				....
 
 These dialogues are read and displayed by a node (Dialogue.tscn) which must be added to your scenes that utilize dialogue. The dialogues are displayed by calling the node's initiate() method, with the first argument being the JSON's filename and the second optional argument being the ID of the block to be displayed. (If no block is given, the code will start with a block with the ID 'first', and if there is no ID 'first', the block in the zeroeth index). A terminate() function also exists if you need something else in the scene to end the dialogue.
 
