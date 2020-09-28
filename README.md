@@ -83,12 +83,13 @@ For a new speaker without a preset, you can include a 'voice' key with a diction
 
       Vary Speeds Within Dialogue
 
-In the original Godot Open Dialogue, you can add pauses to the dialogue as its prints using a pause character that isn't shown (by default, '|'). I added the ability to change the dialogue printing speed by using an integer before this character. So, including 9| in your text will cause the following dialogue to print very fast, while adding 1| will cause it to print very slow. The speeds resulting from these integers are predetermined, not based on the default_wait_time member variable. (This is so your player can change that variable through the settings without precluding the use of different speeds within the dialogue.) To reset to the default speed, use a dash, e.g., '-|"
+In the original Godot Open Dialogue, you can add pauses to the dialogue as its prints using a pause character that isn't shown (by default, '|'). I added the ability to change the dialogue printing speed by using an integer before this character. So, including 9| in your text will cause the following dialogue to print very fast, while adding 1| will cause it to print very slow. To reset to the default speed, use a dash, e.g., '-|"
 
 Zero will print the following text immediately (without typewriter effect), stopping at the next speed change or pause. Example:
 
 	"I'm talking at the default speed. 1|I'm speaking very slow. 5|I'm speaking at an average speed. 9|I'm speaking very fast! 0| This sentence will appear all at once.| And now I'm back to speaking very fast!!!"
 
+The speeds resulting from these integers are predetermined, not based on the default_wait_time member variable. (This is so your player can change that variable through the settings without precluding the use of different speeds within the dialogue.) 
 
       Varied Dialogue For Repeated Speech
 
@@ -289,6 +290,7 @@ If you want every block to have a certain BBCode effect, you can add that in the
 	default_bb_open_tag = "[rainbow freq=0.2 sat=10 val=20]"
 	default_bb_close_tag = "[/rainbow]"
 
+So that's handy if you have a custom BB effect you want to use in every dialogue.
 
       Easily Change Themes and Other GUI Options
 
