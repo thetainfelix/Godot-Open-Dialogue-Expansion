@@ -1,5 +1,5 @@
 # Godot-Open-Dialogue-Expansion
-This is my branch of J.Sena's project Godot Open Dialogue, a JSON-based non-linear conversation system for Godot projects. It's also a branch of Godot Voice Generator by TNTC-Lab, with features added to integrate the two.
+This is my branch of J.Sena's project Godot Open Dialogue, a JSON-based non-linear conversation system for Godot projects. It's also a branch of Godot Voice Generator by TNTC-Lab, with features added to integrate the two. Here's a sample project that showcases all the features and contains the Godot Open Dialogue and Godot Voice Generator add-on files as well: https://drive.google.com/drive/folders/1QGkgd1DmMnDNh84LBdBL-FH2iKq0RWnp?usp=sharing
 
 Expanded Godot Open Dialogue
 For Godot 3.2
@@ -73,7 +73,7 @@ Also: I added a dictionary where you can define a preset portrait for each chara
 
       Godot Voice Generator Integration
 
-First off for new features, integration with Godot Voice Generator, a tool created by TNTC Labs (https://tntc-lab.itch.io/). I've added a bunch of new functions to the voice generator so that it works with Godot Open Dialogue, and I'm providing the code here, but note that the original Godot Voice Generator is pay-what-you-want on itch-io, so you should support TNTC if you can and throw them some bucks. To use Godot Voice Generator, simply create a VoiceGeneratorAudioStreamPlayer.tscn node and set it as a child of the dialogue node. As long as the dialogue node's member variable enable_voice is set to true, each line will be read by the voice generator.
+First off for new features, integration with Godot Voice Generator, a tool created by TNTC Labs (https://tntc-lab.itch.io/). I've added a bunch of new functions to the voice generator so that it works with Godot Open Dialogue, and I'm providing the code here, but note that the original Godot Voice Generator is pay-what-you-want on itch-io, so you should support TNTC if you can and throw them some bucks. To use Godot Voice Generator with the dialogue system, simply create a VoiceGeneratorAudioStreamPlayer.tscn node and set it as a child of the dialogue node. As long as the dialogue node's member variable enable_voice is set to true, each line will be read by the voice generator.
 
 For customization, you can create presets in the script (VoiceGeneratorAudioStream.gd). The first preset is "default", which you can change to alter the default settings (yep....) There are five settings for each preset (aside from 'name', of course) -- 'file', which is a path to the audio file the voice generator should load whenever the character speaks, 'pitch', which modulates the sample's pitch_scale (1.0 being unchanged), 'variation', which is the variation in pitch (1.5 being a 50% variation), 'volume', which alters the volume of the sample (1.0 being unchanged), and finally 'speed', which shortens the sample by cutting off the end (for numbers <1), or lengthens it by adding silence to the end (for numbers >1). 
 
