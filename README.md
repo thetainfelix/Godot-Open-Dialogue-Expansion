@@ -395,7 +395,7 @@ Then, open Portrait.GD and type the PORTRAITS_FOLDER, where the character portra
 
 -If something else isn't working right, you might have a space or return character in a key that you didn't notice. The code filters these out, but there might be some rare case where a non-printing character is missed and prevents the key from being read correctly.
 
--You can credit me and J.Sena (the creator of Godot Open Dialogue in its original iteration) in your game credits if you want, but you don't have to.
+-You can credit me, J.Sena (the creator of Godot Open Dialogue in its original iteration) and TNTC Lab (creator of Godot Voice Generator) in your game credits if you want, but you don't have to.
 
 
 
