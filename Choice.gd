@@ -1,0 +1,3 @@
+extends RichTextLabel
+
+var next
