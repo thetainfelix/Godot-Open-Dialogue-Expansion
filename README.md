@@ -14,7 +14,7 @@ Hi! I'm Graham and this is my branch of Godot Open Dialogue, an add-on created b
 
 In the documentation for my branch here, I'll outline the main differences in my version with regard to the JSON format first, and then I'll explain the features I added. 
 
-      How To Use
+# How To Use
 
 First off, its worth noting that in a JSON, an object is a collection of key-value pairs, whereas in GDScript and other programming languages this is called a Dictionary (and an object is an instance of a class or something else more complicated). So, for clarity, I'm going to refer to JSON objects as dictionaries, which is how Godot interprets them anyway.
 
@@ -46,6 +46,7 @@ So. What have I added? Well, first a caveat -- I'm not an experienced programmer
 
 
 
+# Features
 
       Infers Missing Fields
 
@@ -313,8 +314,7 @@ Warning: I don't recommend changing the vertical font spacing options (or the se
 
 
 
-
-            Set-Up and Use
+# Set-Up and Use
 
 First off, you can open Dialogue.tscn and change the box's size if it's too small or large for your game. The suggested way to change the size is by selecting the node Box and changing its "Min Size" parameters (under Rect). Don't change the root node's (Dialogue's) size, because it should be set to full rect (the full size of your game window). You can also try out different themes here by applying them to Box.
 
@@ -383,7 +383,7 @@ Then, open Portrait.GD and type the PORTRAITS_FOLDER, where the character portra
 
 
 
-            Tips
+#  Tips
 
 -If you don't want visible scroll bars for your options popup, create a theme and modify the VScrollBar parameters, setting each option to an empty texture.
 
