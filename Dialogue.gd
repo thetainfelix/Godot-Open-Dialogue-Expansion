@@ -453,7 +453,6 @@ func update_dialogue(block: Dictionary): # the core function, which runs wheneve
 			# An empty string will automatically advance to the next block in the array.
 	executing = false
 	if not block.has('content') and next_blockID != null:
-		print("autonext!!!")
 		next()
 
 
