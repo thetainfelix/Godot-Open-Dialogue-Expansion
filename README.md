@@ -1,6 +1,9 @@
 # Godot-Open-Dialogue-Expansion
 This is my branch of J.Sena's project Godot Open Dialogue, a JSON-based non-linear conversation system for Godot projects. It's also a branch of Godot Voice Generator by TNTC-Lab, with features added to integrate the two. Here's a sample project that showcases all the features and contains the Godot Open Dialogue and Godot Voice Generator add-on files as well: https://drive.google.com/drive/folders/1QGkgd1DmMnDNh84LBdBL-FH2iKq0RWnp?usp=sharing
 
+![](gif1.gif)
+![](gif2.gif)
+
 Expanded Godot Open Dialogue
 For Godot 3.2
 
